@@ -1,0 +1,10 @@
+/vendor
+/.idea
+/storage/app
+/storage/framework
+/storage/logs
+/tests
+Homestead.json
+Homestead.yaml
+.env
+.phpunit.result.cache
