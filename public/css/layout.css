@@ -19,6 +19,10 @@ header {
     /* Note: backdrop-filter has minimal browser support */
 }
 
+.fixed {
+    position: fixed;
+}
+
 header .left-col {
     /* Auto Layout */
     display: flex;
