@@ -21,6 +21,7 @@ header {
 
 .fixed {
     position: fixed;
+    z-index: 999;
 }
 
 header .left-col {
@@ -137,5 +138,138 @@ header .right-col button:active {
     /* Light/Primary/60 */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #3A75EA;
     box-shadow: 0px 0px 0px 4px rgba(1, 122, 255, 0.24);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    left: 0px;
+    top: 80px;
+}
+
+.banner {
+    position: static;
+    /*height: 696px;*/
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+
+    /* Light/Gray/0 */
+    background: #FCFCFD;
+    border-radius: 0px;
+}
+
+.platform {
+    position: absolute;
+    width: calc(50% - 50%/4);
+    height: calc((50% - 50%/4)/4);
+    left: 8%;
+    top: calc(75% + 10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.platform-item {
+    padding: 12px 22px;
+    background: #FCFCFD;
+    text-align: center;
+}
+
+.platform-active {
+    background: #3A75EA;
+    /* Light/Gray/20 */
+    border: 2px solid rgba(252, 252, 253, 0.4);
+    box-sizing: border-box;
+}
+
+.platform-active p {
+    color: white;
+}
+
+.banner img.component1 {
+    position: absolute;
+    width: 512px;
+    height: 364px;
+    right: 116px;
+    top: calc(50% - 364px/2);
+}
+
+.banner img.component2 {
+    position: absolute;
+    width: 223px;
+    height: 111.5px;
+    right: 116px;
+    top: 23.5px;
+
+    mix-blend-mode: multiply;
+}
+
+.banner img.component3 {
+    position: absolute;
+    width: 450px;
+    height: 328px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.banner img.component4 {
+    position: absolute;
+    width: 500.78px;
+    /*height: 1468.67px;
+    left: -478px;
+    top: 174.3px;*/
+    height: 366.67px;
+    left: 0px;
+    top: 323.3px;
+
+    mix-blend-mode: multiply;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 615px;
+    height: 557px;
+    left: calc(50% - 615px/2 - 294.5px);
+    top: calc(50% - 557px/2 - 0.5px);
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 615px;
+    height: 345px;
+    left: 0px;
+    top: 0px;
+}
+
+.banner-text1{
+    position: static;
+    width: 615px;
+    height: 273px;
+    left: 0px;
+    top: 0px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 0px;
 }
 

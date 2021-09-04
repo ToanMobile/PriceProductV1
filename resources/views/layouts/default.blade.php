@@ -7,12 +7,10 @@
         <link href="css/layout.css" rel="stylesheet">
         @yield('style')
     </head>
-    <body style="height: 1000px">
+    <body>
         @include('layouts.header')
 
-        <div class="container">
-            @yield('content')
-        </div>
+        @yield('content')
 
         @section('layouts.footer')
         @show

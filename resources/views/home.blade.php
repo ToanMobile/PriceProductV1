@@ -3,9 +3,44 @@
 @section('title', 'Home')
 
 @section('content')
-    <h1>
-        Hello <?php echo $name; ?>
-    </h1>
+    <div class="col-md-12 content">
+        <section class="banner">
+            <img src="img/BannerBg.svg" width="100%" />
+            <div class="platform">
+                <div class="platform-item">
+                    <img src="img/iconWeb.svg" />
+                    <p>Website</p>
+                </div>
+                <div class="platform-item">
+                    <img src="img/iconDesktop.svg" />
+                    <p>Desktop</p>
+                </div>
+                <div class="platform-item">
+                    <img src="img/iconTablet.svg" />
+                    <p>Tablet</p>
+                </div>
+                <div class="platform-item">
+                    <img src="img/iconMobile.svg" />
+                    <p>Mobile</p>
+                </div>
+                <div class="platform-item">
+                    <img src="img/iconOrther.svg" />
+                    <p>Khác</p>
+                </div>
+            </div>
+        </section>
+        {{--<section class="banner">
+            <img src="img/pngegg 1.png" class="component1" />
+            <img src="img/Group 1413.png" class="component2" />
+            <img src="img/01.png" class="component3" />
+            <img src="img/Group 1414.png" class="component4" />
+            <div class="banner-content">
+                <div class="banner-text">
+                    <img src="img/bannerText1.png" class="banner-text1" />
+                </div>
+            </div>
+        </section>--}}
+    </div>
 @stop
 
 @section('js')
@@ -14,8 +49,15 @@
         var sticky = $('header'),
             scroll = $(window).scrollTop();
 
-        if (scroll >= 100) sticky.addClass('fixed');
+        if (scroll > 0) sticky.addClass('fixed');
         else sticky.removeClass('fixed');
+    });
+    $('.platform-item').click(function () {
+        if ($(this).hasClass('platform-active')) {
+            $(this).removeClass('platform-active');
+        } else {
+            $(this).addClass('platform-active');
+        }
     });
 </script>
 @stop
