@@ -3,21 +3,21 @@
     <head>
         <title>App Name - @yield('title')</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/layout.css" rel="stylesheet">
     </head>
     <body>
-        @section('layouts.header')
-            This is the master header.
-        @show
+        @include('layouts.header')
+
         <div class="container">
             @yield('content')
         </div>
 
-        @section('footer')
+        @section('layouts.footer')
         @show
 
-        <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-        <script src="{{ asset('js/popper.min.js') }}"></script>
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

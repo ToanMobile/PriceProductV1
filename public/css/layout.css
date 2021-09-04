@@ -1,0 +1,137 @@
+header {
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 112px;
+
+    position: absolute;
+    height: 80px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+
+    /* Light/Background Elevation/24 */
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(40px);
+    /* Note: backdrop-filter has minimal browser support */
+}
+
+header .left-col {
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 268.67px;
+    height: 40px;
+    left: 112px;
+    top: 20px;
+}
+
+header .left-col .logo {
+    position: static;
+    width: 116.67px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+}
+
+header .left-col .lang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 120px;
+    height: 32px;
+    left: 148.67px;
+    top: 4px;
+    margin-left: 32px;
+}
+
+header .left-col .lang img {
+    position: static;
+    width: 32px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+}
+
+header .left-col .lang span {
+    position: static;
+    width: 80px;
+    height: 28px;
+    left: 40px;
+    top: 2px;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    letter-spacing: 0.0125em;
+    /* Light/Gray/90 */
+    color: rgba(36, 38, 46, 0.8);
+    margin-left: 8px;
+}
+
+header .right-col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 132px;
+    height: 48px;
+    left: 1196px;
+    top: 16px;
+}
+
+header .right-col button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 12px;
+    border:none;
+
+    position: static;
+    width: 132px;
+    height: 48px;
+    left: 0px;
+    top: 0px;
+
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #FCFCFD;
+    align-items: center;
+
+    background: #3A75EA;
+    /* Light/Shadow Elevation/03 */
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.12);
+}
+
+header .right-col button:active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+
+    /* Light/Primary/60 */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #3A75EA;
+    box-shadow: 0px 0px 0px 4px rgba(1, 122, 255, 0.24);
+}
+

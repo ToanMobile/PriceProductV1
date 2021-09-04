@@ -7,4 +7,3 @@
         Hello <?php echo $name; ?>
     </h1>
 @stop
-
