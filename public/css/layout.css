@@ -180,6 +180,7 @@ header .right-col button:active {
     padding: 12px 22px;
     background: #FCFCFD;
     text-align: center;
+    cursor: pointer;
 }
 
 .platform-active {
