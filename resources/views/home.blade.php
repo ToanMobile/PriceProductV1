@@ -52,13 +52,13 @@
                         <div class="package-detail">
                             <div class="price-info">
                                 <div class="price-sale-off">
-                                    <span>5,979,000 VNĐ</span>
+                                    <span id="priceOld_1">5,979,000 VNĐ</span>
                                     <div class="sale-off-percent">
                                         <span>TIẾT KIỆM 77%</span>
                                     </div>
                                 </div>
                                 <div class="price">
-                                    <span><span>đ</span> 99,000</span>
+                                    <span id="priceNew_1"><span>đ</span> 99,000</span>
                                 </div>
                             </div>
                             <span>Giao diện hiện đại, đa dạng, sạch theo trend thiết kế mới nhất.</span>
@@ -87,9 +87,9 @@
                             <div class="add-section">
                                 <span>Thêm số lượng Section</span>
                                 <div class="tool-add">
-                                    <button type="button" class="reduce"><img src="img/reduce.svg"></button>
-                                    <span>1</span>
-                                    <button type="button" class="increase"><img src="img/increase.svg" /></button>
+                                    <button type="button" onclick="reduce(1)" class="reduce"><img src="img/reduce.svg"></button>
+                                    <span id="quantity_1">1</span>
+                                    <button type="button" onclick="increase(1)" class="increase"><img src="img/increase.svg" /></button>
                                 </div>
                                 <span class="price-per-page"><b>$14.99 </b> / Page</span>
                             </div>
@@ -107,7 +107,7 @@
                             <hr class="hidden-footer"/>
                             <div class="package-footer hidden-footer">
                                 <button type="button" class="contact">TƯ VẤN TRỌN GÓI</button>
-                                <button type="button" class="payment">CỌC TRƯỚC 50%</button>
+                                <button type="button" id="btn1" class="payment">THANH TOÁN</button>
                             </div>
                         </div>
                     </div>
@@ -118,13 +118,13 @@
                         <div class="package-detail">
                             <div class="price-info">
                                 <div class="price-sale-off">
-                                    <span>5,979,000 VNĐ</span>
+                                    <span id="priceOld_2">5,979,000 VNĐ</span>
                                     <div class="sale-off-percent" style="background-color: #FF5E61;">
                                         <span>TIẾT KIỆM 77%</span>
                                     </div>
                                 </div>
                                 <div class="price">
-                                    <span><span>đ</span> 2,999,000</span>
+                                    <span id="priceNew_2"><span>đ</span> 2,999,000</span>
                                 </div>
                             </div>
                             <span>Giao diện hiện đại, đa dạng, sạch theo trend thiết kế mới nhất.</span>
@@ -153,9 +153,9 @@
                             <div class="add-section">
                                 <span>Thêm số Trang/Màn Hình</span>
                                 <div class="tool-add">
-                                    <button type="button" class="reduce"><img src="img/reduce.svg"></button>
-                                    <span>5</span>
-                                    <button type="button" class="increase"><img src="img/increase.svg" /></button>
+                                    <button type="button" onclick="reduce(2)" class="reduce"><img src="img/reduce.svg"></button>
+                                    <span id="quantity_2">5</span>
+                                    <button type="button" onclick="increase(2)" class="increase"><img src="img/increase.svg" /></button>
                                 </div>
                                 <span class="price-per-page"><b>$14.99 </b> / Page</span>
                             </div>
@@ -184,13 +184,13 @@
                         <div class="package-detail">
                             <div class="price-info">
                                 <div class="price-sale-off">
-                                    <span>5,979,000 VNĐ</span>
+                                    <span id="priceOld_3">5,979,000 VNĐ</span>
                                     <div class="sale-off-percent">
                                         <span>TIẾT KIỆM 78%</span>
                                     </div>
                                 </div>
                                 <div class="price">
-                                    <span><span>đ</span> 3,999,000</span>
+                                    <span id="priceNew_3"><span>đ</span> 3,999,000</span>
                                 </div>
                             </div>
                             <span>Giao diện hiện đại, đa dạng, sạch theo trend thiết kế mới nhất.</span>
@@ -219,9 +219,9 @@
                             <div class="add-section">
                                 <span>Thêm số Trang/Màn Hình</span>
                                 <div class="tool-add">
-                                    <button type="button" class="reduce"><img src="img/reduce.svg"></button>
-                                    <span>8</span>
-                                    <button type="button" class="increase"><img src="img/increase.svg" /></button>
+                                    <button type="button" onclick="reduce(3)" class="reduce"><img src="img/reduce.svg"></button>
+                                    <span id="quantity_3">8</span>
+                                    <button type="button" onclick="increase(3)" class="increase"><img src="img/increase.svg" /></button>
                                 </div>
                                 <span class="price-per-page"><b>$14.99 </b> / Page</span>
                             </div>
@@ -252,6 +252,58 @@
 @section('js')
 <script>
     var arrPlatform = ['web'];
+    function reduce(i) {
+        let quantity = parseInt($('#quantity_' + i).text());
+        if (quantity <= 1) {
+            return;
+        }
+        quantity = quantity - 1;
+        let price = 99000;
+        if (i === 2) {
+            price = 599800;
+        }
+        if (i === 3) {
+            price = 799800;
+        }
+        let priceOld = formatMoney(Math.floor((price * 100)/77) * quantity);
+        $('#priceOld_' + i).html(priceOld + " VNĐ");
+        let priceNew = formatMoney(price * quantity);
+        $('#priceNew_' + i).html('<span>đ</span> ' + priceNew);
+        $('#quantity_' + i).html(quantity);
+        if (i === 1 && priceNew <= 500000) {
+            $('#btn1').html('THANH TOÁN');
+        }
+    }
+    function increase(i) {
+        let quantity = parseInt($('#quantity_' + i).text());
+        quantity = quantity + 1;
+        let price = 99000;
+        if (i === 2) {
+            price = 599800;
+        }
+        if (i === 3) {
+            price = 799800;
+        }
+        let priceOld = formatMoney(Math.floor((price * 100)/77) * quantity);
+        $('#priceOld_' + i).html(priceOld + " VNĐ");
+        let priceNew = price * quantity;
+        let priceNewHtml = formatMoney(priceNew);
+        $('#priceNew_' + i).html('<span>đ</span> ' + priceNewHtml);
+        $('#quantity_' + i).html(quantity);
+
+        if (i === 1 && priceNew > 500000) {
+            $('#btn1').html('CỌC TRƯỚC 50%');
+        }
+    }
+    function formatMoney(n, c, d, t) {
+        var c = isNaN(c = Math.abs(c)) ? 2 : c,
+            t = t == undefined ? "," : t,
+            s = n < 0 ? "-" : "",
+            i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))),
+            j = (j = i.length) > 3 ? j % 3 : 0;
+
+        return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t);
+    };
     $(window).scroll(function(){
         var sticky = $('header'),
             scroll = $(window).scrollTop();
