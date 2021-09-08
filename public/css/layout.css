@@ -1,3 +1,9 @@
+body {
+    position: relative;
+    width: 1440px;
+    background: #FFFFFF;
+}
+
 header {
     /* Auto Layout */
     display: flex;
@@ -290,6 +296,7 @@ header .right-col button:active {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
     padding: 0px;
 
     position: static;
@@ -943,6 +950,100 @@ header .right-col button:active {
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.12);
 }
 
+.banner-contact {
+    position: static;
+    width: 100%;
+    height: 183px;
+    left: 0px;
+    top: 1620px;
+
+    /* Light/Primary/05 */
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #3A75EA;
+}
+
+.banner-contact .btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 222px;
+    height: 103px;
+    right: 18%;
+    top: calc(50% - 103px/2);
+}
+
+.btn-group .call {
+    border:none;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: static;
+    width: 222px;
+    height: 48px;
+    left: 0px;
+    top: 0px;
+
+    /* Light/Primary/50 */
+    background: #3A75EA;
+
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.5px;
+    /* Light/Gray/0 */
+    color: #FCFCFD;
+}
+
+.btn-group .call:hover {
+    /* Light/Shadow Elevation/03 */
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.12);
+}
+
+.btn-group .message {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: static;
+    width: 222px;
+    height: 48px;
+    left: 0px;
+    top: 55px;
+
+    /* Light/Gray/50 */
+    background: rgba(36, 38, 46, 0.05);
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.5px;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.btn-group .message:hover {
+    /* Light/Shadow Elevation/03 */
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.12);
+}
+
+@media only screen and (min-width: 1440px){
+    body {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 1440px) and (min-width: 768px){
     .package {
         padding: 40px 5% 5%;
@@ -958,5 +1059,14 @@ header .right-col button:active {
     }
     .package-intro {
         width: 30%;
+    }
+    .banner-contact .btn-group {
+        right: 9%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .banner-contact .btn-group {
+        right: 7%;
     }
 }

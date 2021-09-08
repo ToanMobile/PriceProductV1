@@ -246,6 +246,15 @@
                 </div>
             </div>
         </section>
+        <section class="banner-contact">
+            <div style="position: relative">
+            <img src="img/BannerContact.svg" />
+            <div class="btn-group">
+                <button type="button" class="call"><img src="img/IconCallBtn.svg" />GỌI NGAY</button>
+                <button type="button" class="message"><img src="img/IconMessageBtn.svg" />CHAT TRỰC TIẾP</button>
+            </div>
+            </div>
+        </section>
     </div>
 @stop
 
