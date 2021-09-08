@@ -2,6 +2,8 @@ body {
     position: relative;
     width: 1440px;
     background: #FFFFFF;
+
+    font-family: "SF Pro Text Semibold";
 }
 
 header {
@@ -81,7 +83,7 @@ header .left-col .lang span {
     left: 40px;
     top: 2px;
 
-    font-family: SF Pro Display;
+    /*font-family: SF Pro Display;*/
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -119,7 +121,7 @@ header .right-col button {
     left: 0px;
     top: 0px;
 
-    font-family: SF Pro Text;
+    /*font-family: SF Pro Text;*/
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -325,7 +327,7 @@ header .right-col button:active {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF;
 
     /* Font Style/H6/Medium */
-    font-family: SVN-Gilroy;
+    /*font-family: SVN-Gilroy;*/
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -395,7 +397,7 @@ header .right-col button:active {
     left: 0px;
     top: 120px;
 
-    font-family: SF Pro Text;
+    /*font-family: SF Pro Text;*/
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -456,7 +458,7 @@ header .right-col button:active {
     left: 0px;
     top: 8px;
 
-    font-family: SF Pro Text;
+    /*font-family: SF Pro Text;*/
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -496,7 +498,7 @@ header .right-col button:active {
     top: 8px;
 
     /* Font Style/Body 2/Bold */
-    font-family: SF Pro Text;
+    /*font-family: SF Pro Text;*/
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
@@ -536,7 +538,7 @@ header .right-col button:active {
 }*/
 
 .package-detail .price > span {
-    font-family: New York Extra Large;
+    /*font-family: New York Extra Large;*/
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -546,7 +548,7 @@ header .right-col button:active {
 }
 
 .package-detail .price span > span {
-    font-family: New York Extra Large;
+    /*font-family: New York Extra Large;*/
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -580,7 +582,7 @@ header .right-col button:active {
 
 .package-popular h3 {
     /* Font Style/Subtitle 1/Bold */
-    font-family: SVN-Gilroy;
+    /*font-family: SVN-Gilroy;*/
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -611,7 +613,7 @@ header .right-col button:active {
 
 .package-benefit > h3 {
     /* Font Style/H6/Bold */
-    font-family: SVN-Gilroy;
+    /*font-family: SVN-Gilroy;*/
     font-weight: bold;
     font-size: 20px;
     line-height: 28px;
@@ -653,7 +655,7 @@ header .right-col button:active {
     top: 2px;
 
     /* Font Style/Body 1/Medium */
-    font-family: SF Pro Text;
+    /*font-family: SF Pro Text;*/
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -696,7 +698,7 @@ header .right-col button:active {
     top: 0px;
 
     /* Font Style/Body 1/Medium */
-    font-family: SF Pro Text;
+    /*font-family: SF Pro Text;*/
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -729,7 +731,7 @@ header .right-col button:active {
 
 .price-per-page {
     /* Font Style/Body 1/Semibold */
-    font-family: SF Pro Text;
+    /*font-family: SF Pro Text;*/
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -804,7 +806,7 @@ header .right-col button:active {
     /* Light/Gray/50 */
     border: 1px solid rgba(36, 38, 46, 0.05);
 
-    font-family: SF Pro Display;
+    /*font-family: SF Pro Display;*/
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -838,7 +840,7 @@ header .right-col button:active {
     left: 40px;
     top: 0px;
 
-    font-family: SVN-Gilroy;
+    /*font-family: SVN-Gilroy;*/
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -880,7 +882,7 @@ header .right-col button:active {
 
 .timeline span {
     /* Font Style/Subtitle 1/Medium */
-    font-family: SVN-Gilroy;
+    /*font-family: SVN-Gilroy;*/
     font-style: normal;
     font-size: 18px;
     line-height: 24px;
@@ -902,7 +904,7 @@ header .right-col button:active {
     /* Light/Gray/50 */
     background: rgba(36, 38, 46, 0.05);
 
-    font-family: SF Pro Text;
+    /*font-family: SF Pro Text;*/
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -932,7 +934,7 @@ header .right-col button:active {
     /* Light/Primary/50 */
     background: #3A75EA;
 
-    font-family: SF Pro Text;
+    /*font-family: SF Pro Text;*/
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -991,7 +993,7 @@ header .right-col button:active {
     /* Light/Primary/50 */
     background: #3A75EA;
 
-    font-family: SF Pro Text;
+    /*font-family: SF Pro Text;*/
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -1022,7 +1024,7 @@ header .right-col button:active {
 
     /* Light/Gray/50 */
     background: rgba(36, 38, 46, 0.05);
-    font-family: SF Pro Text;
+    /*font-family: SF Pro Text;*/
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
