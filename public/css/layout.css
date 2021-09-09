@@ -1035,9 +1035,253 @@ header .right-col button:active {
     color: #24262E;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: static;
+    width: 100%;
+    height: 1610px;
+}
+
+.content .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: relative;
+    width: 604px;
+    height: 92px;
+    top: 140px;
+}
+
+.content .title h3 {
+    position: static;
+    width: 604px;
+    height: 56px;
+    left: 0px;
+    top: 0px;
+
+    /* Font Style/H3/Bold */
+    /*font-family: New York Extra Large;*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.content .title p {
+    position: static;
+    width: 290px;
+    height: 28px;
+    left: 157px;
+    top: 64px;
+
+    /* Font Style/H6/Medium */
+    /*font-family: SVN-Gilroy;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    letter-spacing: 0.0015em;
+    /* Light/Gray/80 */
+    color: rgba(36, 38, 46, 0.6);
+}
+
 .btn-group .message:hover {
     /* Light/Shadow Elevation/03 */
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.12);
+}
+
+.content .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: relative;
+    width: 100%;
+    height: 1228px;
+    top: 232px;
+}
+
+.content .intro .first {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0px;
+
+    position: static;
+    width: 100%;
+    height: 292px;
+    left: 0px;
+    top: 0px;
+}
+
+.content .intro .first > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 286px;
+    height: 292px;
+    left: 0px;
+    top: 0px;
+}
+
+.content .intro .first img {
+    position: static;
+    width: 184.5px;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+}
+
+.content .intro .first h4 {
+    /* Font Style/H6/Semibold */
+    /*font-family: SVN-Gilroy;*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+    letter-spacing: 0.0015em;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.content .intro .first p {
+    position: static;
+    width: 286px;
+    height: 72px;
+    left: 0px;
+    top: 76px;
+
+    /* Font Style/Body 2/Regular */
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160% */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.005em;
+
+    /* Light/Gray/80 */
+    color: rgba(36, 38, 46, 0.6);
+}
+
+.content .intro .second {
+    padding: 2% 5%;
+}
+
+.content .intro .second img {
+    width: 100%;
+}
+
+.content .intro .thirty {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0px 0px;
+
+    position: static;
+    width: 100%;
+    height: 132px;
+    left: 0px;
+    top: 1096px;
+}
+
+.content .intro .thirty > div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 371.67px;
+    height: 92px;
+    left: 0px;
+    top: 40px;
+}
+
+.content .intro .thirty img {
+    position: static;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+}
+
+.content .intro .thirty .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 303.67px;
+    height: 92px;
+    left: 0px;
+    top: 0px;
+}
+
+.content .intro .thirty .intro h4 {
+    position: static;
+    width: 303.67px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+
+    /* Font Style/H6/Semibold */
+    /*font-family: SVN-Gilroy;*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0015em;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.content .intro .thirty .intro p {
+    position: static;
+    width: 303.67px;
+    height: 48px;
+    left: 0px;
+    top: 44px;
+
+    /* Font Style/Body 2/Regular */
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.005em;
+
+    /* Light/Gray/80 */
+    color: rgba(36, 38, 46, 0.6);
 }
 
 @media only screen and (min-width: 1440px){

@@ -255,6 +255,62 @@
             </div>
             </div>
         </section>
+        <section class="content">
+            <div class="title">
+                <h3>Cam Kết & Chuyên Nghiệp</h3>
+                <p>Tính năng giao diện hoàn chỉnh</p>
+            </div>
+            <div class="intro">
+                <div class="col-md-12 first">
+                    <div class="col-md-3">
+                        <img src="img/Rectangle 1341.png" />
+                        <h4>Xem Tiến Độ <b>Trực Tiếp, Trung Thực</b></h4>
+                        <p>Đội ngũ chúng tôi làm việc với nhiều năm kinh nghiệm, sẵn sàng làm hài lòng bạn đúng tiến độ</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/Rectangle 1342.png" />
+                        <h4><b>Hỗ Trợ</b> Chỉnh Sửa Theo <b>Design Systems</b></h4>
+                        <p>Đội ngũ chúng tôi làm việc với nhiều năm kinh nghiệm, sẵn sàng làm hài lòng bạn đúng tiến độ</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/Rectangle 1343.png" />
+                        <h4>Quy Trình <b>Bài Bản</b> UX/UI <b>Chuyên Nghiệp</b></h4>
+                        <p>Đội ngũ chúng tôi làm việc với nhiều năm kinh nghiệm, sẵn sàng làm hài lòng bạn đúng tiến độ</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/Rectangle 1344.png" />
+                        <h4>Giao Diện <b>Dark - Light</b> Mode, <b>Reponsive</b></h4>
+                        <p>Đội ngũ chúng tôi làm việc với nhiều năm kinh nghiệm, sẵn sàng làm hài lòng bạn đúng tiến độ</p>
+                    </div>
+                </div>
+                <div class="col-md-12 second">
+                    <img src="img/Frame 3610.png" />
+                </div>
+                <div class="col-md-12 thirty">
+                    <div class="col-md-4">
+                        <img src="img/Frame 3634.svg" />
+                        <div class="intro">
+                            <h4>Thi Công <b>Chuyên Nghiệp</b></h4>
+                            <p>Đội ngũ chúng tôi làm việc với nhiều năm kinh nghiệm, sẵn sàng làm hài lòng bạn</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/Frame 3635.svg" />
+                        <div class="intro">
+                            <h4>Quy Trình <b>Bài Bản</b></h4>
+                            <p>Đội ngũ chúng tôi làm việc với nhiều năm kinh nghiệm, sẵn sàng làm hài lòng bạn</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/Frame 3636.svg" />
+                        <div class="intro">
+                            <h4>Đúng Tiến Độ, <b>Kịp Thời</b></h4>
+                            <p>Đội ngũ chúng tôi làm việc với nhiều năm kinh nghiệm, sẵn sàng làm hài lòng bạn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 @stop
 
