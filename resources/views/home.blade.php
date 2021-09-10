@@ -255,7 +255,7 @@
             </div>
             </div>
         </section>
-        <section class="content">
+        <section class="feature">
             <div class="title">
                 <h3>Cam Kết & Chuyên Nghiệp</h3>
                 <p>Tính năng giao diện hoàn chỉnh</p>
@@ -309,6 +309,26 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="category">
+            <div class="title">
+                <h2>Đa Dạng Lĩnh Vực & Tối Ưu Doanh Nghiệp</h2>
+                <p>Tính năng giao diện hoàn chỉnh</p>
+            </div>
+            <div class="intro">
+                <ul class="cate-name">
+                    <li class="active">Sản Phẩm & Dịch Vụ</li>
+                    <li>CV Profile & Portfolio</li>
+                    <li>Agency</li>
+                    <li>Thương Mại Điện Tử</li>
+                    <li>Sự Kiện & Giải Trí</li>
+                    <li>Ladning Page</li>
+                    <li>Tin Tức / Blogs</li>
+                    <li>Sức Khoẻ & Fitness</li>
+                    <li>Công nghệ</li>
+                </ul>
+                <img src="img/Frame 3612.png" />
             </div>
         </section>
     </div>
