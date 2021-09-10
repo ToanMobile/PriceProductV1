@@ -328,6 +328,7 @@
                     <li>Sức Khoẻ & Fitness</li>
                     <li>Công nghệ</li>
                 </ul>
+                {{--<div class="img"></div>--}}
                 <img src="img/Frame 3612.png" />
             </div>
         </section>
