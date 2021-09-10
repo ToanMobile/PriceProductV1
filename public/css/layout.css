@@ -1389,6 +1389,7 @@ ul.cate-name li {
     display: flex;
     align-items: center;
     letter-spacing: 0.0015em;
+    cursor: pointer;
 }
 
 ul.cate-name li.active {
