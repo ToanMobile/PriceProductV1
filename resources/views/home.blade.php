@@ -332,6 +332,13 @@
                 <img src="img/Frame 3612.png" />
             </div>
         </section>
+        <section class="banner-logo">
+            <img src="img/image 129.png" />
+            <img src="img/image 129.png" />
+            <img src="img/image 129.png" />
+            <img src="img/image 129.png" />
+            <img src="img/image 129.png" />
+        </section>
     </div>
 @stop
 

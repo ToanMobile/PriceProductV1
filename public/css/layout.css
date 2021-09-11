@@ -1412,6 +1412,38 @@ ul.cate-name li.active:before {
     background-size: contain;*/
 }
 
+.banner-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 112px;
+
+    position: relative;
+    width: 100%;
+    height: 148px;
+    left: -1px;
+    top: 439px;
+
+    /* Light/Background Elevation/24 */
+
+    background: #FFFFFF;
+    /* Light/Gray/60 */
+
+    border: 1px solid rgba(36, 38, 46, 0.2);
+    box-sizing: border-box;
+}
+
+.banner-logo img {
+    position: static;
+    width: 188px;
+    height: 100px;
+    left: 369.5px;
+    top: 24px;
+
+    opacity: 0.5;
+}
+
 @media only screen and (min-width: 1440px){
     body {
         width: 100%;
