@@ -366,6 +366,7 @@
                 </div>
             </div>
         </section>
+        <section class="carousel"></section>
     </div>
 @stop
 
