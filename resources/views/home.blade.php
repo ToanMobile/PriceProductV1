@@ -339,6 +339,33 @@
             <img src="img/image 129.png" />
             <img src="img/image 129.png" />
         </section>
+        <section class="security">
+            {{--<img src="img/Frame 1419.png" />--}}
+            <div class="img"></div>
+            <div class="key">
+                <div>
+                    <img src="img/Group 1415.svg" />
+                    <div class="intro">
+                        <h3>Hoàn Tiền Trong <b>14-Ngày</b></h3>
+                        <p>Thật lấy làm tiếc ! nếu chất lượng dịch vụ không tốt, chúng tôi sẽ hoàn tiền cho bạn trong 14 ngày kể từ khi bắt đầu công việc.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/Group 1416.svg" />
+                    <div class="intro">
+                        <h3>Bảo Mật An Toàn</h3>
+                        <p>Thông tin của bạn là bất khả xâm phạm, chúng tôi bảo vệ chúng một cách tuyệt đối</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/Group 1417.svg" />
+                    <div class="intro">
+                        <h3>Thanh Toán</h3>
+                        <p>Chúng tôi chấp nhận thanh toán với nhiều hình thức khác nhau</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 @stop
 
