@@ -367,6 +367,19 @@
             </div>
         </section>
         <section class="carousel"></section>
+        <section class="thanks">
+            <div class="description">
+                <div class="title">
+                    <h3>Cảm ơn<br/> Quý Khách</h3>
+                    <p>Biết ơn vì sự tin tưởng và thời gian của bạn, chúng tôi sẽ làm việc hết mình !</p>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="price"><img src="img/IconPrice.svg"/>BẢNG GIÁ</button>
+                    <button type="button" class="chat"><img src="img/IconMessageBtn.svg"/>CHAT TRỰC TIẾP</button>
+                </div>
+            </div>
+            <img src="img/2021-08-31.png" />
+        </section>
     </div>
 @stop
 

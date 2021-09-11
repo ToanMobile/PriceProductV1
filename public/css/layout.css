@@ -1,3 +1,6 @@
+* {
+    font-family: "SF Pro Text Semibold";
+}
 body {
     position: relative;
     width: 1440px;
@@ -1576,6 +1579,168 @@ ul.cate-name li.active:before {
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
+}
+
+.thanks {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 120px 112px;
+
+    position: relative;
+    width: 100%;
+    height: 648px;
+    left: 0px;
+    top: 531px;
+
+    /* Light/Primary/05 */
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #3A75EA;
+}
+
+.thanks > img {
+    position: static;
+    width: 723px;
+    height: 408px;
+    left: 605px;
+    top: 120px;
+    /* Light/Gray/100 */
+    border: 1px solid #24262E;
+    display: flex;
+    flex-direction: column;
+}
+
+.thanks .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 461px;
+    height: 256px;
+    left: 112px;
+    top: 120px;
+}
+
+.thanks .description .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 441px;
+    height: 176px;
+    left: 0px;
+    top: 0px;
+    margin-bottom: 32px;
+}
+
+.thanks .description .title h3 {
+    position: static;
+    width: 269px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+
+    /* Font Style/H3/Bold */
+    /*font-family: New York Extra Large;*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    /* or 117% */
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.thanks .description .title p {
+    position: static;
+    width: 441px;
+    height: 56px;
+    left: 0px;
+    top: 120px;
+
+    /* Font Style/H6/Medium */
+    /*font-family: SVN-Gilroy;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+    letter-spacing: 0.0015em;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.thanks .description .btn-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 393px;
+    height: 48px;
+    left: 0px;
+    top: 208px;
+}
+
+.thanks .description .btn-group .chat {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 222px;
+    height: 48px;
+    border: none;
+    /* Light/Gray/50 */
+    background: rgba(36, 38, 46, 0.05);
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.5px;
+    /* Light/Gray/100 */
+    color: #24262E;
+    margin-left: 5px;
+}
+
+.thanks .description .btn-group .chat:hover{
+    /* Light/Shadow Elevation/03 */
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.12);
+}
+
+.thanks .description .btn-group .price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 164px;
+    height: 48px;
+
+    border: none;
+    /* Light/Primary/50 */
+    background: #3A75EA;
+    color: #FCFCFD;
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.5px;
+}
+
+.thanks .description .btn-group .price:hover {
+    /* Light/Shadow Elevation/03 */
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.12);
 }
 
 @media only screen and (min-width: 1440px){
