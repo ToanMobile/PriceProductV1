@@ -426,11 +426,20 @@
                 </div>
             </div>
         </section>
+        <div class="scroll-top" onclick="topFunction()">
+            <img src="img/Icon.svg" />
+        </div>
     </div>
 @stop
 
 @section('js')
 <script>
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
     var arrPlatform = ['web'];
     function reduce(i) {
         let quantity = parseInt($('#quantity_' + i).text());

@@ -2123,6 +2123,35 @@ ul.cate-name li.active:before {
     margin-top: 20px;
 }
 
+.scroll-top {
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    right: 32px;
+    top: 90%;
+
+    /* Dark/Gray/90 */
+    background: rgba(255, 255, 255, 0.8);
+    /* Light/Gray/50 */
+    border: 1px solid rgba(36, 38, 46, 0.05);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.scroll-top:hover {
+    /* Light/Shadow Elevation/12 */
+    box-shadow: 0px 12px 17px rgba(0, 0, 0, 0.08);
+}
+
+.scroll-top img {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: calc(50% - 36px/2);
+    top: calc(50% - 36px/2);
+}
+
 @media only screen and (min-width: 1440px){
     body {
         width: 100%;
