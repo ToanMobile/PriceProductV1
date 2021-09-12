@@ -1743,6 +1743,386 @@ ul.cate-name li.active:before {
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.12);
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: relative;
+    width: 100%;
+    height: 396px;
+    left: 0px;
+    top: 649px;
+}
+
+.footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 112px;
+
+    position: static;
+    width: 100%;
+    height: 396px;
+    left: 0px;
+    top: 0px;
+    /* Light/Primary/60 */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #3A75EA;
+}
+
+.footer .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 495px;
+    height: 276px;
+    left: 833px;
+    top: 60px;
+}
+
+.footer .right .register {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: relative;
+    width: 415.67px;
+    height: 156px;
+    left: 0px;
+    top: 0px;
+}
+
+.footer .right .register > h3 {
+    position: static;
+    width: 415.67px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+
+    /* Font Style/H5/Semibold */
+    /*font-family: New York Extra Large;*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    /* identical to box height, or 123% */
+
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.footer .right .register .email {
+    width: 300.67px;
+    padding: 12px 16px;
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    background: rgba(252, 252, 253, 0.05);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #FCFCFD;
+    opacity: 1; /* Firefox */
+}
+
+.footer .right .register .btn-register {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+
+    position: absolute;
+    width: 115px;
+    height: 44px;
+    right: 0px;
+    top: 48px;
+
+    /* Light/Primary/50 */
+    background: #3A75EA;
+    /* Light/Gray/0 */
+    border: 1px solid #FCFCFD;
+    color: #FCFCFD;
+}
+
+.footer .right .register .btn-register:hover {
+    /* Light/Shadow Elevation/03 */
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.12);
+}
+
+.footer .right .register > p {
+    /* Font Style/Body 2/Regular */
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160% */
+    letter-spacing: -0.005em;
+
+    /* Light/Gray/5 */
+    color: rgba(252, 252, 253, 0.8);
+    margin-top: 16px;
+}
+
+.footer .right .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    top: 196px;
+    margin-top: 40px;
+}
+
+.footer .right .contact > div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 484px;
+    height: 32px;
+    left: 0px;
+    top: 48px;
+}
+
+.footer .right .contact > h3 {
+    position: static;
+    width: 415.67px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+
+    /* Font Style/H5/Semibold */
+    /*font-family: New York Extra Large;*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    /* identical to box height, or 123% */
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.footer .right .contact .phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 199px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+}
+
+.footer .right .contact img {
+    position: static;
+    width: 32px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+    margin-right: 10px;
+}
+
+.footer .right .contact span {
+    position: static;
+    width: 159px;
+    height: 24px;
+    left: 40px;
+    top: 4px;
+
+    /* Font Style/Subtitle 1/Medium */
+    /*font-family: SVN-Gilroy;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    letter-spacing: 0.0125em;
+    /* Light/Gray/0 */
+    color: #FCFCFD;
+}
+
+.footer .right .contact .email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 257px;
+    height: 32px;
+    left: 227px;
+    top: 0px;
+    margin-left: 28px;
+}
+
+.footer .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 415.67px;
+    height: 252px;
+    left: 112px;
+    top: 60px;
+}
+
+.footer .left .description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 415.67px;
+    height: 140px;
+    left: 0px;
+    top: 0px;
+}
+
+.footer .left .description .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 415.67px;
+    height: 64px;
+    left: 0px;
+    top: 0px;
+    margin-bottom: 16px;
+}
+
+.footer .left .description .title > img {
+    position: static;
+    left: 0%;
+    right: 88.45%;
+    top: 12.5%;
+    bottom: 12.5%;
+}
+
+.footer .left .description .title > h3 {
+    position: static;
+    width: 343.67px;
+    height: 64px;
+    left: 72px;
+    top: 0px;
+
+    /* Font Style/H5/Semibold */
+    /*font-family: New York Extra Large;*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    /* or 123% */
+
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    /* Light/Gray/5 */
+    color: white;
+}
+
+.footer .left .description > p {
+    position: static;
+    width: 415.67px;
+    height: 60px;
+    left: 0px;
+    top: 80px;
+
+    /* Font Style/Subtitle 2/Medium */
+    /*font-family: SVN-Gilroy;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.015em;
+
+    /* Light/Gray/5 */
+    color: rgba(252, 252, 253, 0.8);
+}
+
+.footer .left .society {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 249px;
+    height: 72px;
+    left: 0px;
+    top: 180px;
+    margin-top: 44px;
+}
+
+.footer .left .society .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 212px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+}
+
+.footer .left .society .icon > img {
+    position: static;
+    width: 32px;
+    height: 32px;
+    left: 180px;
+    top: 0px;
+}
+
+.footer .left .society > p {
+    position: static;
+    width: 249px;
+    height: 24px;
+    left: 0px;
+    top: 48px;
+
+    /* Font Style/Body 2/Regular */
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 160% */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.005em;
+    /* Light/Gray/0 */
+    color: #FCFCFD;
+    margin-top: 20px;
+}
+
 @media only screen and (min-width: 1440px){
     body {
         width: 100%;

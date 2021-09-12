@@ -380,6 +380,52 @@
             </div>
             <img src="img/2021-08-31.png" />
         </section>
+        <section class="footer">
+            <div>
+                <div class="left">
+                    <div class="description">
+                        <div class="title">
+                            <img src="img/Group.svg" />
+                            <h3>Digital Academy <br/>
+                                Học Viện Thực Chiến </h3>
+                        </div>
+                        <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the”.</p>
+                    </div>
+                    <div class="society">
+                        <div class="icon">
+                            <img src="img/IconFB.svg" />
+                            <img src="img/IconFB.svg" />
+                            <img src="img/IconFB.svg" />
+                            <img src="img/IconFB.svg" />
+                            <img src="img/IconFB.svg" />
+                            <img src="img/IconFB.svg" />
+                        </div>
+                        <p>Digital Academy. All Right Reserved</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="register">
+                        <h3>Đăng Ký Với Chúng Tôi</h3>
+                        <input type="text" class="email" placeholder="Địa chỉ email của bạn" />
+                        <button type="button" class="btn-register">Đăng ký</button>
+                        <p>Khi điền địa chỉ email, bạn đồng ý với các điều khoản của chúng tôi <b>Terms & Conditions</b> and <b>Privacy Policy</b></p>
+                    </div>
+                    <div class="contact">
+                        <h3>Liên Hệ</h3>
+                        <div>
+                            <div class="phone">
+                                <img src="img/IconPhone.svg" />
+                                <span>(+84) 0846 088 081</span>
+                            </div>
+                            <div class="email">
+                                <img src="img/IconEmail.svg" />
+                                <span>Thietke.huutri@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 @stop
 
