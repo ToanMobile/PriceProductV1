@@ -28,7 +28,7 @@
                     <p>Khác</p>
                 </div>
             </div>
-            <input type="hidden" id="platformChoose" value="" />
+            <input type="hidden" id="platformChoose" value="web" />
         </section>
         {{--<section class="banner">
             <img src="img/pngegg 1.png" class="component1" />
@@ -107,7 +107,7 @@
                             <hr class="hidden-footer"/>
                             <div class="package-footer hidden-footer">
                                 <button type="button" class="contact">TƯ VẤN TRỌN GÓI</button>
-                                <button type="button" id="btn1" class="payment">THANH TOÁN</button>
+                                <button type="button" id="btn1" onclick="toCart('1');" class="payment">THANH TOÁN</button>
                             </div>
                         </div>
                     </div>
@@ -173,7 +173,7 @@
                             <hr class="hidden-footer"/>
                             <div class="package-footer hidden-footer">
                                 <button type="button" class="contact">TƯ VẤN TRỌN GÓI</button>
-                                <button type="button" class="payment">CỌC TRƯỚC 50%</button>
+                                <button type="button" onclick="toCart('2');" class="payment">CỌC TRƯỚC 50%</button>
                             </div>
                         </div>
                     </div>
@@ -239,7 +239,7 @@
                             <hr class="hidden-footer"/>
                             <div class="package-footer hidden-footer">
                                 <button type="button" class="contact">TƯ VẤN TRỌN GÓI</button>
-                                <button type="button" class="payment">CỌC TRƯỚC 50%</button>
+                                <button type="button" onclick="toCart('3');" class="payment">CỌC TRƯỚC 50%</button>
                             </div>
                         </div>
                     </div>
@@ -427,7 +427,7 @@
             </div>
         </section>
         <div class="scroll-top" onclick="topFunction()">
-            <img src="img/Icon.svg" />
+            <img src="img/IconTop.svg" />
         </div>
     </div>
 @stop
@@ -438,6 +438,11 @@
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+    }
+
+    function toCart(i) {
+        let quantity = parseInt($('#quantity_' + i).text());
+        location.href = "/cart?package="+i+"&quantity="+quantity+"&platform="+$('#platformChoose').val();
     }
 
     var arrPlatform = ['web'];

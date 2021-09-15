@@ -13,4 +13,5 @@
 |
 */
 
-$router->get('/', 'HomeController@index');
+$router->get('/',['as' => 'home', 'uses' => 'HomeController@index']);
+$router->get('/cart', 'CartController@index');

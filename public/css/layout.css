@@ -2152,6 +2152,711 @@ ul.cate-name li.active:before {
     top: calc(50% - 36px/2);
 }
 
+.cart {
+    position: relative;
+    width: 100%;
+    height: 2694px;
+
+    /* Light/Background Elevation/16 */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF;
+}
+
+.cart .container {
+    position: relative;
+    top: 445px;
+}
+
+.cart .banner {
+    position: absolute;
+    height: 244px;
+    left: 0px;
+    right: 0px;
+    top: 80px;
+
+    /* Light/Background Elevation/24 */
+    background: #FFFFFF;
+}
+
+.cart .banner img {
+    width: 100%;
+}
+
+.cart .banner h3 {
+    position: absolute;
+    width: 100%;
+    height: 56px;
+    top: calc(50% - 56px/2 - 18px);
+
+    /* Font Style/H3/Bold */
+    /*font-family: New York Extra Large;*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    /* identical to box height, or 117% */
+    text-align: center;
+    /* Light/Gray/100 */
+    color: #24262E;
+
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.cart .detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+
+    position: static;
+    width: 803px;
+    height: 1528px;
+    left: 0px;
+    top: 0px;
+
+    /* Light/Background Elevation/24 */
+    background: #FFFFFF;
+    /* Light/Shadow Elevation/04 */
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.12));
+}
+
+.cart .summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+
+    position: absolute;
+    width: 389px;
+    height: 800px;
+    right: 6%;
+    top: 0px;
+    /* Light/Background Elevation/24 */
+    background: #FFFFFF;
+    /* Light/Shadow Elevation/16 */
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.08);
+}
+
+.summary-fixed {
+    position: fixed !important;
+    right: 19.5% !important;
+    top: 15px !important;
+}
+
+.summary .summary-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 100%;
+    height: 322px;
+    left: 16px;
+    top: 16px;
+}
+
+.summary .summary-text h3 {
+    position: static;
+    width: 171px;
+    height: 28px;
+    left: calc(50% - 171px/2);
+    top: calc(50% - 28px/2 - 158px);
+
+    /* Font Style/H6/Bold */
+    /*font-family: SVN-Gilroy;*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.0015em;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.summary .summary-text > hr {
+    width: 100%;
+}
+
+.summary .summary-text .package-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 100%;
+    height: 156px;
+    left: 0px;
+    top: 60px;
+}
+
+.package-summary .total-package {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 100%;
+    height: 28px;
+    left: 0px;
+    top: 0px;
+}
+
+.package-summary .total-package > .package-name {
+    /* Font Style/Body 1/Semibold */
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.005em;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.package-summary .total-package > .package-price {
+    width: 85px;
+    /* Font Style/Body 1/Medium */
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    letter-spacing: -0.005em;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.package-summary .detail-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 100%;
+    height: 116px;
+    left: 0px;
+    top: 40px;
+}
+
+.package-summary .detail-price .section-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 100%;
+    height: 76px;
+    left: 0px;
+    top: 0px;
+}
+
+.package-summary .detail-price .section-page > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 186px;
+    height: 76px;
+    left: 0px;
+    top: 0px;
+}
+
+.section-page .quantity  span{
+    position: static;
+    width: 146px;
+    height: 24px;
+    left: 40px;
+    top: 4px;
+
+    /* Font Style/Body 2/Medium */
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 160% */
+    letter-spacing: -0.005em;
+    /* Light/Gray/80 */
+    color: rgba(36, 38, 46, 0.6);
+}
+
+.section-page .tool-add {
+    margin-top: 0px;
+}
+
+.section-page > span {
+    /* Font Style/Body 1/Medium */
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    letter-spacing: -0.005em;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.package-summary .detail-price .animation-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 100%;
+    height: 32px;
+    left: 0px;
+    top: 84px;
+}
+
+.animation-price > div > span {
+    position: static;
+    width: 147px;
+    height: 24px;
+    left: 40px;
+    top: 4px;
+
+    /* Font Style/Body 2/Medium */
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 160% */
+    letter-spacing: -0.005em;
+    /* Light/Gray/80 */
+    color: rgba(36, 38, 46, 0.6);
+}
+
+.animation-price > span {
+    /* Font Style/Body 1/Medium */
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    letter-spacing: -0.005em;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.package-summary .addition {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 357px;
+    height: 112px;
+    left: 0px;
+    top: 232px;
+}
+
+.package-summary .addition > h3 {
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.005em;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.package-summary .addition .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 357px;
+    height: 32px;
+    left: 0px;
+    top: 40px;
+}
+
+.item > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 200px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+}
+
+.item > div > span {
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 160% */
+    letter-spacing: -0.005em;
+    /* Light/Gray/80 */
+    color: rgba(36, 38, 46, 0.6);
+}
+
+.item > span {
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.005em;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.summary > input {
+    border: 1px solid rgba(36, 38, 46, 0.2);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 16px;
+}
+
+.summary > input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 160% */
+    letter-spacing: -0.005em;
+    color: rgba(36, 38, 46, 0.2);
+}
+
+.summary .total-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 357px;
+    height: 60px;
+    left: 16px;
+    top: 456px;
+    margin-top: 24px;
+}
+
+.summary .total-price > span {
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.005em;
+
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.summary .total-price .price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 209px;
+    height: 60px;
+    left: 148px;
+    top: 0px;
+}
+
+.total-price > span {
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.005em;
+
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.price .sale-off {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 74px;
+    height: 28px;
+    left: 0px;
+    top: 16px;
+}
+
+.price .sale-off > span {
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    letter-spacing: -0.005em;
+    color: rgba(95, 192, 154, 1);
+    margin-left: 6px;
+}
+
+.price .price-new {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px;
+
+    position: static;
+    width: 119px;
+    height: 60px;
+    left: 90px;
+    top: 0px;
+}
+
+.price .price-new span:nth-child(1) {
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.005em;
+    text-decoration-line: line-through;
+
+    /* Light/Gray/70 */
+    color: rgba(36, 38, 46, 0.49);
+}
+
+.price .price-new span:nth-child(2) {
+    /*font-family: New York Extra Large;*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    /* identical to box height, or 123% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* Light/Primary/50 */
+    color: #3A75EA;
+}
+
+.summary > hr {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.summary .datcoc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0px;
+
+    position: static;
+    width: 357px;
+    height: 40px;
+    left: 16px;
+    top: 564px;
+}
+
+.datcoc > span:nth-child(1) {
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.005em;
+
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.datcoc > span:nth-child(2) {
+    /*font-family: New York Extra Large;*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    /* identical to box height, or 123% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Light/Primary/50 */
+    color: #3A75EA;
+}
+
+.summary > button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    position: static;
+    width: 357px;
+    height: 60px;
+    left: 16px;
+    top: 628px;
+
+    /* Light/Green/50 */
+    background: #5FC09A;
+    border: none;
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.5px;
+
+    /* Light/Gray/0 */
+    color: #FCFCFD;
+    margin-top: 28px;
+}
+
+.summary > button:hover{
+    /* Light/Shadow Elevation/03 */
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.12);
+}
+
+.summary > span {
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.005em;
+
+    /* Light/Gray/90 */
+    color: rgba(36, 38, 46, 0.8);
+    margin-top: 24px;
+}
+
+.group-payment {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 178.29px;
+    height: 48px;
+    left: 16px;
+    top: 784px;
+    margin-top: 24px;
+}
+
+.group-payment img {
+    position: static;
+    width: 48px;
+    height: 48px;
+    left: 0px;
+    top: 0px;
+}
+
+.detail > h5 {
+    /*font-family: SVN-Gilroy;*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    text-align: center;
+    letter-spacing: 0.0015em;
+
+    /* Light/Gray/90 */
+    color: rgba(36, 38, 46, 0.8);
+}
+
+.detail .platform {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 771px;
+    height: 88px;
+    left: 0px;
+    top: 44px;
+    margin-top: 16px;
+}
+
+.detail .platform > .platform-item {
+    width: 128.6px;
+    height: 88px;
+}
+
 @media only screen and (min-width: 1440px){
     body {
         width: 100%;
