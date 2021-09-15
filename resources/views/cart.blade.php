@@ -17,8 +17,8 @@
             <h3>{{ $package_name }}</h3>
         </div>
         <div class="container">
-            <div class="col-md-12">
-                <div class="col-md-8 detail">
+            <div class="col-sm-12 col-md-12">
+                <div class="col-sm-12 col-md-8 detail">
                     <h5>Dành cho nền tảng:</h5>
                     <div class="platform">
                         <div class="platform-item platform-active" data-platform="web">
@@ -42,8 +42,11 @@
                             <p>Khác</p>
                         </div>
                     </div>
+                    <div class="package-sale-off">
+
+                    </div>
                 </div>
-                <div class="col-md-4 summary">
+                <div class="col-sm-12 col-md-4 summary">
                     <div class="summary-text">
                         <h3>Tóm Tắt Đơn Hàng</h3>
                         <hr />
@@ -136,8 +139,9 @@
     <script>
         $(window).scroll(function(){
             var sticky = $('.summary'),
-                scroll = $(window).scrollTop();
-            if (scroll > 438) sticky.addClass('summary-fixed');
+                scroll = $(window).scrollTop(),
+                ww = $(window).width;
+            if (scroll > 438 && ww > 768) sticky.addClass('summary-fixed');
             else sticky.removeClass('summary-fixed');
         });
         var arrPlatform = ['web'];

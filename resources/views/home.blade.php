@@ -2,6 +2,16 @@
 
 @section('title', 'Home')
 
+@section('style')
+    <style>
+        @media only screen and (max-width: 1440px) {
+            body {
+                width: 1440px;
+            }
+        }
+    </style>
+@stop
+
 @section('content')
     <div class="col-md-12 content">
         <section class="banner">
