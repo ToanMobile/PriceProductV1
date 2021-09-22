@@ -43,7 +43,77 @@
                         </div>
                     </div>
                     <div class="package-sale-off">
-
+                        <div class="item">
+                            <div class="price">
+                                <h4>1 Section</h4>
+                                <p>5,979,000 VNĐ</p>
+                                <p><span>đ</span> 99,000</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tag">
+                                <p>TIẾT KIỆM
+                                    50%</p>
+                            </div>
+                            <div class="price">
+                                <h4>5 Trang</h4>
+                                <p>5,499,000 VNĐ</p>
+                                <p><span>đ</span> 2,690,000</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tag">
+                                <p>TIẾT KIỆM
+                                    77%</p>
+                            </div>
+                            <div class="price">
+                                <h4>8 Trang</h4>
+                                <p>8,979,000 VNĐ</p>
+                                <p><span>đ</span> 3,399,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package-detail">
+                        <h4>Bao gồm</h4>
+                        <div class="benefit-detail">
+                            <div class="benefit active">
+                                <img src="img/BooleanTrue.svg" />
+                                <span>8 Trang/Màn Hình</span>
+                            </div>
+                            <div class="benefit active">
+                                <img src="img/BooleanTrue.svg" />
+                                <span>Hiệu Ứng Tương Tác Prototype</span>
+                            </div>
+                            <div class="benefit active">
+                                <img src="img/BooleanTrue.svg" />
+                                <span>Giám sát tiến độ thực tế</span>
+                            </div>
+                            <div class="benefit active">
+                                <img src="img/BooleanTrue.svg" />
+                                <span>Source File Cơ Bản</span>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="add-section">
+                            <span>Bổ sung Trang/Màn Hình</span>
+                            <div class="tool-add">
+                                <button type="button" onclick="reduce({{ $package }})" class="reduce"><img src="img/reduce.svg"></button>
+                                <span id="quantity_{{ $package }}">8</span>
+                                <button type="button" onclick="increase({{ $package }})" class="increase"><img src="img/increase.svg" /></button>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="timeline">
+                            <div class="time">
+                                <img src="img/IconTimeline.svg" />
+                                <span><b>8</b> Ngày</span>
+                            </div>
+                            <div class="edit">
+                                <img src="img/IconEdit.svg" />
+                                <span><b>Không Giới Hạn</b> Sửa</span>
+                            </div>
+                        </div>
+                        <hr />
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 summary">
