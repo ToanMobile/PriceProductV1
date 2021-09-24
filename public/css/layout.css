@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "SF Pro Text Semibold";
+    src: url('../fonts/FontsFree-Net-SFProText-Semibold.ttf');
+}
 * {
     font-family: "SF Pro Text Semibold";
 }
@@ -462,7 +466,7 @@ header .right-col button:active {
     /*font-family: SF Pro Text;*/
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     /* identical to box height, or 133% */
     display: flex;
@@ -628,7 +632,7 @@ header .right-col button:active {
     padding: 0px;
 
     position: static;
-    width: 302px;
+    width: auto;
     height: 152px;
     left: 0px;
     top: 44px;
@@ -702,7 +706,7 @@ header .right-col button:active {
     /*font-family: SF Pro Text;*/
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
     /* identical to box height, or 156% */
     letter-spacing: -0.005em;
@@ -1068,7 +1072,7 @@ header .right-col button:active {
     /*font-family: New York Extra Large;*/
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 45px;
     line-height: 56px;
     /* Light/Gray/100 */
     color: #24262E;
@@ -1085,7 +1089,7 @@ header .right-col button:active {
     /*font-family: SVN-Gilroy;*/
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
     /* identical to box height, or 140% */
     letter-spacing: 0.0015em;
@@ -1339,7 +1343,7 @@ header .right-col button:active {
     /*font-family: SVN-Gilroy;*/
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
     /* identical to box height, or 140% */
     letter-spacing: 0.0015em;
@@ -1532,7 +1536,7 @@ ul.cate-name li.active:before {
     /*font-family: New York Extra Large;*/
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 25px;
     line-height: 32px;
     /* identical to box height, or 123% */
     /* Light/Gray/100 */
@@ -1949,7 +1953,7 @@ ul.cate-name li.active:before {
     /*font-family: SVN-Gilroy;*/
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
     /* identical to box height, or 133% */
     letter-spacing: 0.0125em;
@@ -2110,7 +2114,7 @@ ul.cate-name li.active:before {
     /*font-family: SF Pro Text;*/
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 24px;
     /* identical to box height, or 160% */
     display: flex;
@@ -2327,7 +2331,7 @@ ul.cate-name li.active:before {
 }
 
 .package-summary .total-package > .package-price {
-    width: 85px;
+    width: auto;
     /* Font Style/Body 1/Medium */
     /*font-family: SF Pro Text;*/
     font-style: normal;
@@ -2687,7 +2691,7 @@ ul.cate-name li.active:before {
     /*font-family: New York Extra Large;*/
     font-style: normal;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 23px;
     line-height: 32px;
     /* identical to box height, or 123% */
 
@@ -3056,6 +3060,73 @@ ul.cate-name li.active:before {
 
 .detail .package-detail > hr {
     width: 100%;
+}
+
+.detail .package-plugin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px;
+    margin: 32px 0px;
+    width: 100%;
+}
+
+.detail .package-plugin .total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px;
+}
+
+.detail .package-plugin .total p {
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    letter-spacing: -0.005em;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.detail .package-plugin .total p:nth-child(2) {
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    letter-spacing: -0.005em;
+    /* Light/Gray/100 */
+    color: #3A75EA;
+}
+
+.detail .package-plugin .alert {
+    margin: 24px 16px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #5FC09A;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.detail .package-plugin .alert img {
+    margin-right: 14px;
+}
+
+.detail .package-plugin .alert p {
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160% */
+    letter-spacing: -0.005em;
+    /* Light/Gray/90 */
+    color: rgba(36, 38, 46, 0.8);
 }
 
 @media only screen and (min-width: 1440px){

@@ -46,8 +46,8 @@
                         <div class="item">
                             <div class="price">
                                 <h4>1 Section</h4>
-                                <p>5,979,000 VNĐ</p>
-                                <p><span>đ</span> 99,000</p>
+                                <p>{{ $old_price }}</p>
+                                <p><span>đ</span> {{ $package_price }}</p>
                             </div>
                         </div>
                         <div class="item">
@@ -57,8 +57,8 @@
                             </div>
                             <div class="price">
                                 <h4>5 Trang</h4>
-                                <p>5,499,000 VNĐ</p>
-                                <p><span>đ</span> 2,690,000</p>
+                                <p>{{ $old_price }}</p>
+                                <p><span>đ</span> {{ $package_price }}</p>
                             </div>
                         </div>
                         <div class="item">
@@ -68,8 +68,8 @@
                             </div>
                             <div class="price">
                                 <h4>8 Trang</h4>
-                                <p>8,979,000 VNĐ</p>
-                                <p><span>đ</span> 3,399,000</p>
+                                <p>{{ $old_price }}</p>
+                                <p><span>đ</span> {{ $package_price }}</p>
                             </div>
                         </div>
                     </div>
@@ -115,6 +115,19 @@
                         </div>
                         <hr />
                     </div>
+                    <div class="package-plugin">
+                        <div class="total">
+                            <p>Tổng phụ: <span>đ</span> <b>2,690,000</b></p>
+                            <p><b>Tiết kiệm được:</b> <span>đ</span> <b>2,899,000</b></p>
+                        </div>
+                        <div class="alert">
+                            <img src="img/IconPriceTag.svg" />
+                            <p><b>Lựa chọn tốt!</b> Gói nâng cao bạn có thể tiết kiệm <b>đ 2,800,000!</b>  Và bạn có thể được bảo hành hoàn phí nếu không hài lòng trong <b>14-ngày</b></p>
+                        </div>
+                        <div class="plugin">
+
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-12 col-md-4 summary">
                     <div class="summary-text">
@@ -123,7 +136,7 @@
                         <div class="package-summary">
                             <div class="total-package">
                                 <span class="package-name">{{ $package_name  }}</span>
-                                <span class="package-price">{{ $package_price  }}</span>
+                                <span class="package-price">đ {{ $package_price  }}</span>
                             </div>
                             <div class="detail-price">
                                 <div class="section-page">
@@ -144,7 +157,7 @@
                                             <button type="button" onclick="increase({{ $package }})" class="increase"><img src="img/increase.svg" /></button>
                                         </div>
                                     </div>
-                                    <span>{{ $per_price }}</span>
+                                    <span>đ {{ $per_price }}</span>
                                 </div>
                                 <div class="animation-price">
                                     <div>
