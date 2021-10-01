@@ -2213,7 +2213,7 @@ ul.cate-name li.active:before {
 
     position: static;
     width: 803px;
-    height: 1528px;
+    height: auto;
     left: 0px;
     top: 0px;
 
@@ -2516,7 +2516,7 @@ ul.cate-name li.active:before {
 
     position: static;
     width: 200px;
-    height: 32px;
+    height: auto;
     left: 0px;
     top: 0px;
 }
@@ -3066,9 +3066,8 @@ ul.cate-name li.active:before {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
     padding: 0px;
-    margin: 32px 0px;
+    margin-top: 32px;
     width: 100%;
 }
 
@@ -3105,7 +3104,7 @@ ul.cate-name li.active:before {
 }
 
 .detail .package-plugin .alert {
-    margin: 24px 16px;
+    margin: 24px 0px;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #5FC09A;
     padding: 16px;
     display: flex;
@@ -3127,6 +3126,249 @@ ul.cate-name li.active:before {
     letter-spacing: -0.005em;
     /* Light/Gray/90 */
     color: rgba(36, 38, 46, 0.8);
+}
+
+.detail .package-plugin .plugin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF;
+    padding: 16px;
+}
+
+.plugin > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plugin > div h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0015em;
+    /* Light/Gray/100 */
+    color: #24262E;
+    margin: 0px 8px 0px 0px;
+}
+
+.plugin .tick {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.plugin .tick .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    /* Light/Gray/60 */
+    padding: 12px 0px;
+    border-bottom: 1px solid rgba(36, 38, 46, 0.2);
+}
+
+.plugin .tick .item > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+}
+
+.plugin .tick .item > div > input {
+    margin-right: 8px;
+    background: rgba(252, 252, 253, 0.05);
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.plugin .tick .item .sale-off {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plugin .tick .item .sale-off .tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.plugin .tick .item .sale-off .tag span {
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    letter-spacing: -0.005em;
+    color: rgba(95, 192, 154, 1);
+}
+
+.plugin .tick .item .price-off .price-old {
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: -0.005em;
+    text-decoration-line: line-through;
+
+    /* Light/Gray/70 */
+
+    color: rgba(36, 38, 46, 0.49);
+    margin-bottom: 0px;
+    text-align: right;
+}
+
+.plugin .tick .item .price-off .price-new {
+    /*font-family: SF Pro Text;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    letter-spacing: -0.005em;
+
+    /* Light/Gray/100 */
+
+    color: #24262E;
+    margin-bottom: 0px;
+}
+
+.plugin .tick .item > div > input:checked {
+    font-size: 12px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #3A75EA;
+}
+
+.plugin .tick .item > div > input:checked ~ span {
+    color: rgba(58, 117, 234, 1);
+}
+
+.plugin .tick .item .chk-customer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.plugin .tick .item .chk-customer > p {
+    margin-bottom: 0px;
+}
+
+.plugin .tick .customer-item {
+    align-items: flex-start;
+}
+
+.plugin .tick .customer-item select {
+    border: none;
+    background: none;
+}
+
+.form-switch label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    letter-spacing: -0.005em;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.chk-customer > p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    letter-spacing: -0.005em;
+    /* Light/Gray/80 */
+    color: rgba(36, 38, 46, 0.6);
+}
+
+.plugin .tick .footer-item {
+    border: none;
+}
+
+.footer-item span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    letter-spacing: -0.005em;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.plugin .tick .footer-item button {
+    background: rgba(36, 38, 46, 0.05);
+    /* Light/Shadow Elevation/03 */
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.12);
+}
+
+.comment {
+    background: #FFFFFF;
+    padding: 16px;
+    width: 803px;
+}
+
+.comment > div {
+    border: 1px solid rgba(36, 38, 46, 0.2);
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+.comment h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    letter-spacing: 0.0015em;
+    /* Light/Gray/100 */
+    color: #24262E;
+}
+
+.comment textarea {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF;
+    border-radius: 4px;
+    padding: 16px;
+    border-color: #FFFFFF;
+}
+
+.comment textarea::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    letter-spacing: -0.005em;
+    /* Light/Gray/60 */
+    color: rgba(36, 38, 46, 0.2);
+}
+
+.comment button {
+    width: 100%;
+    border-radius: 0px;
+    padding: 14px 0px;
+    background: rgba(58, 117, 234, 1);
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.12);
 }
 
 @media only screen and (min-width: 1440px){

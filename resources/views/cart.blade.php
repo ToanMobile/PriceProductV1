@@ -125,7 +125,72 @@
                             <p><b>Lựa chọn tốt!</b> Gói nâng cao bạn có thể tiết kiệm <b>đ 2,800,000!</b>  Và bạn có thể được bảo hành hoàn phí nếu không hài lòng trong <b>14-ngày</b></p>
                         </div>
                         <div class="plugin">
-
+                            <div>
+                                <h3>Bổ sung tính năng</h3>
+                                <img src="img/IconRequest.svg">
+                            </div>
+                            <div class="tick">
+                                <div class="item">
+                                    <div>
+                                        <input type="checkbox" class="" name="">
+                                        <span>Thêm <b>2</b> Lần <b>Chỉnh Sửa</b></span>
+                                    </div>
+                                    <span>đ 99,000</span>
+                                </div>
+                                <div class="item">
+                                    <div>
+                                        <input type="checkbox" class="" name="">
+                                        <span>Tăng Tốc <b>Tiến Độ</b> Còn <b>1 Ngày</b></span>
+                                    </div>
+                                    <span>đ 999,000</span>
+                                </div>
+                                <div class="item">
+                                    <div>
+                                        <input type="checkbox" class="" name="">
+                                        <span>Hiệu Ứng Tương Tác <b>Prototype Animation</b></span>
+                                    </div>
+                                    <span>đ 999,000</span>
+                                </div>
+                                <div class="item">
+                                    <div>
+                                        <input type="checkbox" class="" name="">
+                                        <span>Giao Diện <b>Sáng</b> & <b>Tối</b></span>
+                                    </div>
+                                    <span>đ 999,000</span>
+                                </div>
+                                <div class="item">
+                                    <div>
+                                        <input type="checkbox" class="" name="">
+                                        <span>Strong UX</span>
+                                    </div>
+                                    <div class="sale-off">
+                                        <div class="tag">
+                                            <img src="img/IconPriceTag.svg" />
+                                            <span>50%</span>
+                                        </div>
+                                        <div class="price-off">
+                                            <p class="price-old">đ 4,999,000</p>
+                                            <p class="price-new">đ 1,999,000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item customer-item">
+                                    <div class="chk-customer">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">Đăng ký khách quen</label>
+                                        </div>
+                                        <p>Tiết kiệm 5% cho đơn hàng lần sau</p>
+                                    </div>
+                                    <select>
+                                        <option>3 tháng</option>
+                                    </select>
+                                </div>
+                                <div class="item footer-item">
+                                    <span>Thi công Dev Thiết Kế</span>
+                                    <button type="button" class="btn btn-default">LIÊN HỆ</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -211,6 +276,21 @@
                         <img src="img/momo.svg" />
                         <img src="img/paypal.svg" />
                         <img src="img/credit-card.svg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12">
+                <div class="col-sm-12 col-md-8 comment">
+                    <div>
+                        <h3></h3>
+                        <form>
+                            <h3>Mô tả sản phẩm của bạn</h3>
+                            <textarea rows="5" placeholder="Remake, Giao diện UI, Tính năng thông báo"></textarea>
+                            <button type="button" class="btn btn-primary">
+                                <img src="img/IconSend.svg" />
+                                GỞI LỜI NHẮN
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
