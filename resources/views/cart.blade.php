@@ -295,6 +295,20 @@
                 </div>
             </div>
         </div>
+        <div class="cart-footer">
+            <div>
+                <img src="img/Icon247.svg" />
+                <p>HỖ TRỢ TRỰC TUYẾN 24/7</p>
+            </div>
+            <div>
+                <img src="img/Icon247.svg" />
+                <p>THANH TOÁN BẢO MẬT</p>
+            </div>
+            <div>
+                <img src="img/Icon247.svg" />
+                <p>14-NGÀY BẢO HÀNH KHÔNG RỦI RO!</p>
+            </div>
+        </div>
     </div>
 @stop
 
