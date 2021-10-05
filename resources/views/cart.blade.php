@@ -132,35 +132,35 @@
                             <div class="tick">
                                 <div class="item">
                                     <div>
-                                        <input type="checkbox" class="" name="">
+                                        <input type="checkbox" data="plugin-1-99000">
                                         <span>Thêm <b>2</b> Lần <b>Chỉnh Sửa</b></span>
                                     </div>
                                     <span>đ 99,000</span>
                                 </div>
                                 <div class="item">
                                     <div>
-                                        <input type="checkbox" class="" name="">
+                                        <input type="checkbox" data="plugin-2-999000">
                                         <span>Tăng Tốc <b>Tiến Độ</b> Còn <b>1 Ngày</b></span>
                                     </div>
                                     <span>đ 999,000</span>
                                 </div>
                                 <div class="item">
                                     <div>
-                                        <input type="checkbox" class="" name="">
+                                        <input type="checkbox" data="plugin-3-999000" checked>
                                         <span>Hiệu Ứng Tương Tác <b>Prototype Animation</b></span>
                                     </div>
                                     <span>đ 999,000</span>
                                 </div>
                                 <div class="item">
                                     <div>
-                                        <input type="checkbox" class="" name="">
+                                        <input type="checkbox" data="plugin-4-999000">
                                         <span>Giao Diện <b>Sáng</b> & <b>Tối</b></span>
                                     </div>
                                     <span>đ 999,000</span>
                                 </div>
                                 <div class="item">
                                     <div>
-                                        <input type="checkbox" class="" name="">
+                                        <input type="checkbox" data="plugin-5-1999000" checked>
                                         <span>Strong UX</span>
                                     </div>
                                     <div class="sale-off">
@@ -177,7 +177,7 @@
                                 <div class="item customer-item">
                                     <div class="chk-customer">
                                         <div class="form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            <input class="form-check-input" data="plugin-6-0" type="checkbox" id="flexSwitchCheckDefault">
                                             <label class="form-check-label" for="flexSwitchCheckDefault">Đăng ký khách quen</label>
                                         </div>
                                         <p>Tiết kiệm 5% cho đơn hàng lần sau</p>
@@ -234,14 +234,14 @@
                             </div>
                             <div class="addition">
                                 <h3>Bổ sung</h3>
-                                <div class="item">
+                                <div class="item" id="plugin-3-999000">
                                     <div>
                                         <img src="img/IconCartSection.svg" />
                                         <span>Prototype Animation</span>
                                     </div>
                                     <span>đ 219,000</span>
                                 </div>
-                                <div class="item">
+                                <div class="item" id="plugin-5-1999000">
                                     <div>
                                         <img src="img/IconCartSection.svg" />
                                         <span>Strong UX</span>
@@ -279,7 +279,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-12">
+            <div class="col-sm-12 col-md-12 m-top-24">
                 <div class="col-sm-12 col-md-8 comment">
                     <div>
                         <h3></h3>
@@ -317,9 +317,24 @@
         $(window).scroll(function(){
             var sticky = $('.summary'),
                 scroll = $(window).scrollTop(),
-                ww = $(window).width;
+                ww = $(window).width();
             if (scroll > 438 && ww > 768) sticky.addClass('summary-fixed');
             else sticky.removeClass('summary-fixed');
+        });
+        $('#payment').click(function () {
+            window.location = '/payment?package=2&quantity=5&platform=web';
+        })
+        $('.item input').click(function () {
+            let attrData = $(this).attr('data');
+            if ($(this).is(':checked')) {
+                let data = attrData.split('-');
+                let text = pluginName(parseInt(data[1]));
+                let price = formatMoney(data[2]);
+                $('.addition').append("<div id='"+attrData+"' class='item'> <div> <img src='img/IconCartSection.svg' /> <span>" +
+                    text +"</span></div><span>đ " + price + "</span></div>");
+            } else {
+                $('#'+ attrData).remove();
+            }
         });
         var arrPlatform = ['web'];
         function reduce(i) {
@@ -374,6 +389,30 @@
 
             return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t);
         };
+        function pluginName(i) {
+            let name;
+            switch (i) {
+                case 1:
+                    name = "Thêm 2 Lần Chỉnh Sửa";
+                    break;
+                case 2:
+                    name = "Tăng Tốc Tiến Độ Còn 1 Ngày";
+                    break;
+                case 3:
+                    name = "Prototype Animation";
+                    break;
+                case 4:
+                    name = "Giao Diện Sáng & Tối";
+                    break;
+                case 5:
+                    name = "Strong UX";
+                    break;
+                default:
+                    name = "";
+                    break;
+            }
+            return name;
+        }
         $('.platform-item').click(function () {
             let platformObj = $(this);
             if (platformObj.hasClass('platform-active')) {
