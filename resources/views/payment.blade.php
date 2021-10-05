@@ -7,6 +7,9 @@
         body {
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #FFFFFF;
         }
+        .cart {
+            height: 1440px;
+        }
     </style>
 @stop
 
@@ -151,9 +154,12 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-12 m-top-24">
-                <div class="col-sm-12 col-md-8 btn-group">
-                    <button type="button" class="btn">QUAY LẠI</button>
-                    <button type="button" class="btn">CỌC TRƯỚC 408,000 VNĐ</button>
+                <div class="confirm-group">
+                    <div class="col-sm-12 col-md-8 w-100 btn-group">
+                        <button type="button" class="btn col-md-4">QUAY LẠI</button>
+                        <button type="button" class="btn col-md-6"><img src="img/IconLock.svg" />CỌC TRƯỚC 408,000 VNĐ</button>
+                    </div>
+                    <p>Bằng cách bấm vào nút thanh toán thông tin của bạn được chúng tôi bảo mật tuyệt đối.</p>
                 </div>
             </div>
         </div>
