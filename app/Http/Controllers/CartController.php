@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use App\Http\Service\MomoService;
 
 class CartController extends Controller
 {
@@ -112,6 +113,23 @@ class CartController extends Controller
             'per_price' => $this->currency_format($per_price),
             'old_price' => $this->currency_format($old_per_price, 'VNĐ')
         ]);
+    }
+
+    public function postPayment(Request $request, MomoService $momo) {
+        $data = [
+            "orderId" => time(),
+            "orderInfo" => "test",
+            "amount" => 100000,
+            "redirectUrl" => "",
+            "extraData" => ""
+        ];
+        $check = $momo->payment($data);
+        $response = [
+            'code' => 200,
+            'msg'  => "success",
+            "momo" => $check
+        ];
+        return json_encode($response);
     }
 
     function currency_format($number, $suffix = '') {

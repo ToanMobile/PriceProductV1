@@ -40,7 +40,7 @@
                         </div>
                         <div class="col-md-6">
                             <p>Số điện thoại</p>
-                            <input type="text" class="form-control" name="email" />
+                            <input type="text" class="form-control" name="sdt" />
                         </div>
                     </div>
                     <h3 class="m-top-32">Phương Thức Thanh Toán</h3>
@@ -155,9 +155,9 @@
             </div>
             <div class="col-sm-12 col-md-12 m-top-24">
                 <div class="confirm-group">
-                    <div class="col-sm-12 col-md-8 w-100 btn-group">
+                    <div class="col-sm-12 col-md-8 w-100 btn-group1">
                         <button type="button" class="btn col-md-4">QUAY LẠI</button>
-                        <button type="button" class="btn col-md-6"><img src="img/IconLock.svg" />CỌC TRƯỚC 408,000 VNĐ</button>
+                        <button type="button" id="payment" class="btn col-md-6"><img src="img/IconLock.svg" />CỌC TRƯỚC 408,000 VNĐ</button>
                     </div>
                     <p>Bằng cách bấm vào nút thanh toán thông tin của bạn được chúng tôi bảo mật tuyệt đối.</p>
                 </div>
@@ -203,7 +203,6 @@
                 $('#methodPay').attr('style', 'display: none');
             }
         });
-        var arrPlatform = ['web'];
         function reduce(i) {
             let quantity = parseInt($('#quantity_' + i).text());
             if (quantity <= 1) {
@@ -256,19 +255,19 @@
 
             return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t);
         };
-        $('.platform-item').click(function () {
-            let platformObj = $(this);
-            if (platformObj.hasClass('platform-active')) {
-                platformObj.removeClass('platform-active');
-                var index = arrPlatform.indexOf(platformObj.attr('data-platform'));
-                if (index !== -1) {
-                    arrPlatform.splice(index, 1);
+        $('#payment').click(function () {
+
+
+            $.ajax({
+                url: '/payment',
+                async: true,
+                method: 'POST',
+                data: JSON.stringify(data),
+                dataType: "JSON",
+                success: function (res) {
+                    console.log(res);
                 }
-            } else {
-                platformObj.addClass('platform-active');
-                arrPlatform.push(platformObj.attr('data-platform'));
-            }
-            $('#platformChoose').val(arrPlatform.join(','));
+            });
         });
     </script>
 @stop

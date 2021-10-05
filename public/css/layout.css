@@ -3446,11 +3446,11 @@ ul.cate-name li.active:before {
     box-sizing: border-box;
 }
 
-.btn-group button {
+.btn-group1 button {
     padding: 20px;
 }
 
-.btn-group button:nth-child(1) {
+.btn-group1 button:nth-child(1) {
     background: rgba(36, 38, 46, 0.05);
     /* Light/Gray/60 */
     border: 1px solid rgba(36, 38, 46, 0.2);
@@ -3468,7 +3468,7 @@ ul.cate-name li.active:before {
     margin-right: 24px;
 }
 
-.btn-group button:nth-child(2) {
+.btn-group1 button:nth-child(2) {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -3480,6 +3480,7 @@ ul.cate-name li.active:before {
     background: #5FC09A;
     /* Light/Shadow Elevation/03 */
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.12);
+    width: 60.2%;
 }
 
 .confirm-group > p {
