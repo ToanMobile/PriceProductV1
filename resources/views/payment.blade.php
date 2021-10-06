@@ -178,10 +178,26 @@
             </div>
         </div>
     </div>
+    <div class="modal" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/Group 1440.svg" />
+                    <h3>THANH TOÁN THÀNH CÔNG !</h3>
+                    <p>Cảm ơn bạn đã tin tưởng, sử dụng dịch vụ của chúng tôi !</p>
+                </div>
+            </div>
+        </div>
+    </div>
 @stop
 
 @section('js')
     <script>
+        $(document).ready(function() {
+            if ("{{ $success }}" === 'Success') {
+                $('#myModal').modal('show');
+            }
+        });
         $(window).scroll(function(){
             var sticky = $('.summary'),
                 scroll = $(window).scrollTop(),
@@ -256,16 +272,26 @@
             return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t);
         };
         $('#payment').click(function () {
-
-
+            let data = {
+                name: $('input[name="firstname"]').val() + " " + $('input[name="lastname"]').val(),
+                email: $('input[name="email"]').val(),
+                phone: $('input[name="sdt"]').val(),
+                payMethod: $('input[name="payment"]').val(),
+                platform: '{{ $platform }}',
+                package: '{{ $package }}',
+                quantity: '{{ $quantity }}',
+                plugin: '{{ $plugin }}'
+            };
             $.ajax({
                 url: '/payment',
                 async: true,
                 method: 'POST',
-                data: JSON.stringify(data),
+                data: data,
                 dataType: "JSON",
                 success: function (res) {
-                    console.log(res);
+                    if (res.errorCode === 0) {
+                        window.location = res.payUrl;
+                    }
                 }
             });
         });

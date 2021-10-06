@@ -71,6 +71,8 @@ class CartController extends Controller
         $package = $request->input('package');
         $quantity = $request->input('quantity');
         $platform = $request->input('platform');
+        $plugin = $request->input('plugin');
+        $success = $request->input('message');
         if ($package < 1 || $package > 3) {
             return redirect()->route('home');
         }
@@ -109,7 +111,9 @@ class CartController extends Controller
 
         return view('payment', [
             'package' => $package, 'quantity' => $quantity, 'package_name' => $package_name,
-            'platform' => $platform, 'package_price' => $this->currency_format($package_price),
+            'plugin'  => $plugin, 'platform' => $platform,
+            'success' => $success,
+            'package_price' => $this->currency_format($package_price),
             'per_price' => $this->currency_format($per_price),
             'old_price' => $this->currency_format($old_per_price, 'VNĐ')
         ]);
@@ -117,19 +121,19 @@ class CartController extends Controller
 
     public function postPayment(Request $request, MomoService $momo) {
         $data = [
-            "orderId" => time(),
+            "orderId" => '202110061242',
             "orderInfo" => "test",
-            "amount" => 100000,
+            "amount" => '100000',
             "redirectUrl" => "",
             "extraData" => ""
         ];
         $check = $momo->payment($data);
         $response = [
-            'code' => 200,
-            'msg'  => "success",
-            "momo" => $check
+            'errorCode' => $check['errorCode'],
+            'msg'  => $check['localMessage'],
+            "payUrl" => $check['payUrl']
         ];
-        return json_encode($response);
+        return json_encode($check);
     }
 
     function currency_format($number, $suffix = '') {
