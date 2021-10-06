@@ -121,19 +121,21 @@ class CartController extends Controller
 
     public function postPayment(Request $request, MomoService $momo) {
         $data = [
-            "orderId" => '202110061242',
+            "orderId" => (string)time(),
             "orderInfo" => "test",
-            "amount" => '100000',
+            "amount" => '408000',
             "redirectUrl" => "",
             "extraData" => ""
         ];
         $check = $momo->payment($data);
         $response = [
             'errorCode' => $check['errorCode'],
-            'msg'  => $check['localMessage'],
-            "payUrl" => $check['payUrl']
+            'msg'  => $check['localMessage']
         ];
-        return json_encode($check);
+        if ($check['errorCode'] === 0) {
+            $response['payUrl'] = $check['payUrl'];
+        }
+        return json_encode($response);
     }
 
     function currency_format($number, $suffix = '') {
